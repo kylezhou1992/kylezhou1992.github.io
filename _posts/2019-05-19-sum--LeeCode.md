@@ -28,7 +28,7 @@ A solution set is:
 ]
 ```
 
-##First Solution
+### First Solution
 首先使用快速排序，通过三个for循环遍历数组，找到三个数之和为0的数据，并且返回。对函数的参数进行了修改，因为没有理解源函数retrunColumnSizes这个双重指针的含义
 ```C
 int** threeSum(int* nums, int numsSize, int* returnSize);
