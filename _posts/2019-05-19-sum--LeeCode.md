@@ -125,3 +125,8 @@ void exec(int* nums, int i, int j)
 }
 ```
 time complexity
+
+```c
+O(nlogn+O^3)
+
+```
