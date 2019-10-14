@@ -28,7 +28,7 @@ string convert(string s, int numRows);
 输出: "LCIRETOESIIGEDHN"
 ```
 
-###Solution1
+### Solution1
 按照每一行的规则进行一行一行插入，比如第一行和最后一行的数据差值是2 × numRows - 2，其余行的差别和都是numRows的倍数
 Coding:
 ```C++
@@ -76,7 +76,7 @@ public:
 O(n)，其中 n == \text{len}(s)n==len(s)。每个索引被访问一次。
 ```
 
-###Solution2: 按行排序(LeeCode)
+### Solution2: 按行排序(LeeCode)
 思路
 
 通过从左向右迭代字符串，我们可以轻松地确定字符位于 Z 字形图案中的哪一行。
