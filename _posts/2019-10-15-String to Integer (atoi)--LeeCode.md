@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      字符串转换整数 (atoi)4Sum--LeeCode
-subtitle:   CodeTraining 字符串转换整数 (atoi)--LeeCode
+title:      String to Integer (atoi)--LeeCode
+subtitle:   CodeTraining String to Integer (atoi)--LeeCode
 date:       2019-06-02
 author:     MY
 header-img: img/post-bg-ios9-web.jpg
@@ -76,7 +76,10 @@ public:
 ### Time Complexity
 O(n)
 
+
+
 ### Soluton2 ---正则表达式(python Leecode)
+
 ^：匹配字符串开头
 [\+\-]：代表一个+字符或-字符
 ?：前面一个字符可有可无
@@ -85,10 +88,10 @@ O(n)
 \D：一个非数字字符
 *：前面一个字符的0个或多个
 
+max(min(数字, 2^31^ - 1),  -2^31^) 用来防止结果越界
 
-max(min(数字, 2**31 - 1), -2**31) 用来防止结果越界
 ```python
 class Solution:
     def myAtoi(self, s: str) -> int:
-        return max(min(int(*re.findall('^[\+\-]?\d+', s.lstrip())), 2**31 - 1), -2**31)
+		return max(min(int(*re.findall('^[\+\-]?\d+', s.lstrip())), 2^31 - 1), -2^31)
 ```
